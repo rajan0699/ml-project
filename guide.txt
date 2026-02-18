@@ -1,0 +1,61 @@
+i am working on windows so worked windows comment only.
+
+1. cd pythoncode
+2. mkdir ml-project
+3. cd ml-project
+4. git init
+5. echo > train.py
+6. echo > predict.py
+7. echo > utils.py
+8. echo > README.md
+9. git status
+10. git add train.py utils.py   # stage
+11.git commit -m "Add training script and utilities"    # commit the stage files
+12. repository created github (ml-project)
+13. git remote add origin https://github.com/yourusername/ml-project.git  # linked local repository to github
+14. git push -u origin main # push to github
+15. git status   # check current status uncommitted README.md,predict.py
+16. gihub change inside text # updated predict.py and README.md
+
+17. git add predict.py README.md     # github changes after stage
+18. git commit -m "updated predict.py and README.md"  # commit
+19. git pull origin main
+20. type predict.py (and) type README.md   # check changes in teamate 
+17. git status # update,modify,check
+18. git add utils.py config.py               # stage
+19. git commit -m "Update utilities and add configuration file"        # commit
+20. # git pull origin main    # retrieve changes in github  then after error arrise so not git commit 
+21. git push origin main
+22. type predict.py   # check chages 
+23. type README.md     # check chages
+
+if you changes first push the update in github then pull back its work.
+
+Potential Issues:
+1.Uncommitted Changes During Pull
+    git stash
+    git pull origin main
+    git stash pop
+2.Merge Conflicts Occur
+    git status
+manually resolve
+    git add <resolved-file>
+    git commit
+3. Non-Fast-Forward Push Error
+    git pull origin main
+    git push origin main
+best practices for collaborative development
+
+ * Commit small, logical changes
+
+ * learning the type of issue and resolution
+
+ * Pull before starting new work each day
+
+ * Use git and github for teammate's work in same project (two or more person work in same project)
+
+ * verified fot autherticaltion
+
+ * check for which branch create file in github:
+
+          git checkout -b feature-data-preprocessing
